@@ -20,6 +20,7 @@ package main
 
 import (
 	"fmt"
+	
 	"os"
 )
 
@@ -33,5 +34,7 @@ func main(){
 	ctrmk := os.Mkdir("test",0755)
 	fmt.Println("created",ctrmk)
 
+	file,_ := os.Create("test/tests.txt")
+	fmt.Println("created",file)
 	
 }
